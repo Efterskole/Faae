@@ -19,13 +19,14 @@
                 
             </div>
         </div>
+        
         <div class="card round-background">
             <div class="flex-container">
                 <div class="flex-child">
 
-                   <h1>Silja 6. Juni</h1>
+                   <h1>Silja 6. Juni </h1>
                    <h1>Naja 27. Juni</h1>
-                   <h1>Ida 27. August</h1>
+                   <h1>Ida 20. August</h1>
                    <h1>Karen 5. September</h1>
                    <h1>Magnus 4. Oktober</h1>
                    <h1>Mads 7. Oktober</h1>
@@ -38,10 +39,45 @@
                     
 
                 </div>
+                <div class="flex-child">
+                    <h1 id="Silja">⠀</h1>
+                    <h1 id="Naja">⠀</h1>
+                    <h1 id="Ida">⠀</h1>
+                    <h1 id="Karen">⠀</h1>
+                    <h1 id="Magnus">⠀</h1>
+
+                </div>
                 
             </div>         
-        </div>        
+        </div> 
+        <script>
+            // Set the date we're counting down to
+            const d = new Date(); //d = dato
+            let day = d.getDay() //day = dag
+
+            //month = måned
+            const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            
+            let month = d.getMonth(); //month = måned
+            
+            let theday = d.getDate() + " " + months[month] + " " + d.getFullYear(); //theday = dag + måned + år
+            //
+            console.log(theday); //skriver dag + måned + år til konsollen
+            //document.getElementById("demo").innerHTML = d.getDate() + " " + months[month] + " " + d.getFullYear();
+        
+            if (theday == "6 june 2023") {
+                document.getElementById("Silja").innerHTML = "Tillykke";
+            } else if (theday == "27 june 2023") {
+                document.getElementById("Naja").innerHTML = "Tillykke";
+            } else if (theday == "20 August 2022") {
+                document.getElementById("Ida").innerHTML = "Tillykke";
+
+
+            }
+        </script>       
     
     </body>
 </html>
+
+
 
